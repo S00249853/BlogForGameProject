@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+      <title>Game Project Blog</title>
+</head>
+<body>
+<header>
+<h1>Development Blog</h1>
+    <nav>
+                <ul>
+                    <li> <a href="index.html"> Portfolio </a></li>
+                    <li id="active"> <a href="Blog.html"> Blog </a></li>
+                </ul>
+            </nav>
+</header>
+
+<h1>Week 1</h1>
+<p>
+      Week 1 was mainly spent setting up the project. I set up a 3d unity project with a basic player character 
+      with simple movement (Walk, Jump, Dash) based off of a previous project.
+</p>
+
+<h2>Week 2</h2>
+<p>
+      During Week 2 I started updating the player characters movement. I changed how the character jumped to ensure 
+      it would stay consistent no matter the framerate, and added triple jumping. As well as this, i started working on 
+      sideflipping and wall jumping.
+</p>
+
+<h2>Week 3</h2>
+<p>
+      During Week 3 I continued updating the player characters movement. To start I added sideflipping and wall jumping, although the wall jump needs work.
+      Then, I re-did the players camera to work with cinemachine. I then started worked on making the player move in the
+      direction that the camera is facing, as well as this, I re-did the players movement to make it easier to understand and update.
+</p>
+
+<h2>Week 4</h2>
+<p>
+      During Week 4 I added a hierarchical state machine for the player, and began refactoring my old player script so that everything works the same as it did.
+      This will make it easier to update the player, and to fix bugs in the future.
+</p>
+<h2>Week 5</h2>
+<p>
+      During Week 5 I fully refactored my player to work with the new hierarchical state machine,
+      I also added the ability to ground pound, slide on walls and wall jump.
+      As well as this, I added two buttons, one to destroy certain objects and one that spawns a timed platforming challenge, that can be activated by jumping on them.
+      Then, I started working on a basic enemy, by adding a basic state machine, and logic for chasing the player.
+</p>
+<h2>Week 6</h2>
+<p>
+      During Week 6 I first finished the logic for the enemys state machine, giving it a set of points to patrol between, and making it chase the player 
+      when it gets close enough. After this, I added player knockback, as well as invincibility frames after it gets hit.
+      I also gave the player the ability to kill an enemy by jumping on its head, after which the player will bounce in the air, with the logic for this
+      being usable for any other bouncy surfaces, i.e. springs.
+</p>
+<h2>Week 7</h2>
+<p>
+      During Week 7  I first cleaned up the players state machine to ensure that each state transitioned between each other correctly, and cleanly. 
+      Then, I started working on adding moving platforms, and allowing the player to move with them, although I haven't managed to get that working yet.
+      I then added coyote time, allowing the player to jump briefly after they walk off the edge of a platform, and a jump buffer, 
+      so if the player presses jump moments before they hit the ground, they will jump when they land.
+      I also changed how triple jumps work. Now, the player needs to constantly be moving to be able to triple jump.
+</p>
+<h2>Week 8</h2>
+<p>
+      During Week 8 I started working on the level design. To start, I added cannons and springs to be used throughout the game. 
+      I then made templates for the exterior and interior of a tower. the interior will be used for the tutorial, 
+      as well as for any other smaller levels I add to the game, and the exterior will be used for decorations in the main level.
+      I then made a tutorial level, using the previously made template. It is a short level that makes the player use most of the games movement mechanics,
+      as well as introducing them to some of the games obstacles, i.e. cannons and enemies. While making the level, I added blocks that can be destroyed by ground pounding them,
+      and a new type of button that reveals hidden objects/platforms when pressed. I also made a new prefab for an archway to handle scene transitions, and started working on scene transitions.
+      I also cleaned up some issues with the games prefabs.
+</p>
+<h2>Week 9</h2>
+<p>
+      During Week 9 I implemented a climbing mechanic, allowing players to climb on certain walls.
+       I also started planning, and designing the games main level, by first making an empty hub.
+</p>
+<h2>Week 10</h2>
+<p>
+      During Week 10 I continued working on the main level, I first made a small climbing challenge, followed by a section with springs. 
+      I then added a checkpoint system, as well as teleporters, although the checkpoint system doesn't work properly yet. 
+      I also added a system for level transitions, making the scene fade out when transitioning to a new level, 
+      and ensuring the player spawns in where the transition they enter leads to when they enter a new scene.
+</p>
+<h2>Week 11</h2>
+<p>
+      During Week 11 I first fixed the issue with the checkpoints and teleporters from last week. I then added some basic UI Elements.
+      I then added a persistent game manager class to keep data like player health and collected collectables consistent across scenes, and to handle the UI 
+      This class also handles respawning the player when they run out of health. I refactored the players class to make checkpoints be handled by the game manager,
+      as well as the scene swapper class. I also continued working on the main level.
+</p>
+<h2>Week 12</h2>
+<p>
+      During Week 12 I continued working on the main level. This week, I added a hidden island off the main path in the level, although for now i'm only working on the path to reach it. 
+      I also added spheres allowing the player to dash again if they are dashed into, as well as boundaries that kill the player if touched.
+      I also fixed the issues with the moving platform, and climbing. I also added scriptable objects for the bounciness of the springs, 
+      to keep the springs bounciness consistent with each other. 
+</p>
+<h2>Week 13</h2>
+<p>
+      I started Week 13 by cleaning up some issues with the path up to the hidden island. I then added a hidden area underneath the hub area, with a climbing challenge that is missing some details, 
+      and added platforms that dissapear and reappear at intervals. Then, I fixed some issues with wall-jumping, triple jumping and falling, 
+      and started working on a small level in a different scene that uses the dissapearing platforms.
+</p>
+<h2>Week 14</h2>
+<p>
+      To start Week 14, I fixed an issue with the wall-jumps rotation, where the player would face a set direction in the time after jumping where the player is unable to move.
+      I then finished working on the shorter level I started last week. Then, I added small hidden platforming challenges on the sides of the two towers in the hub area, with an extra challenge at the top of both towers. 
+      One of them focuses on moving platforms, while the other focuses on precise platforming on narrow surfaces. Then, I added four small platforming challenges to the hub area, although some of them may need to be tweaked a bit.
+      I then made an outline for the last part of the main level, and continued working on the hidden island. 
+      I then started working on a second shorter level, this one focusing on dashing.
+</p>
+<h2>Week 15</h2>
+<p>
+      During Week 15, I first finished the second short level. I then added details to most areas in the hub area that missed them, finishing the main level and the hidden island,
+      as well as adding battle arenas, that unlock objects after the player defeats all of the enemies. I also fixed a small issue with the knockback, exiting the state after a short 
+      amount of time if the player doesn't touch the ground first. I then started planning the design of the final boss, and added homing cannons and an object rotator for it.
+      I then added an enterance to the final bosses arena that unlocks once the player gets 15 collectables.
+</p>
+<h2>Week 16</h2>
+<p>
+      During Week 16 I worked on the final boss. To start, I changed how the homing cannon I previously added works, and 
+      then made the level for the final boss. for the last part of the level, I added barriers that move towards the player when activated, that have small holes the 
+      player must jump through, this has some issues that need to be fixed though. I also added a new button type for the final boss.
+      When it is pressed, the previos section of the level is removed, the next section is loaded in and the boss moves to it's next location.
+      I then added two new classes that ensure that objects in a scene that are destroyed and buttons that are activated stay destroyed/activated when the scene is reloaded.
+</p>
+<h2>Week 17</h2>
+<p>
+      I spent Week 17 mainly cleaning up the game. I first finished the small climbing challenge under the hub area. Then, I added boundaries in each level to respawn the player if they fall.
+      I spent the rest of the week fixing minor issues, issues with cannonball collision, enemies not respawning on death, etc, cleaning up the levels, ensuring checkpoints work, 
+      And finishing the UI by adding a main menu and the players health.   
+</p>
+</body>
+
+
+</html>
